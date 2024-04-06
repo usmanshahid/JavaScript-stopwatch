@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT STOPWATCH</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #131313;
+            color: white;
+            font-size: x-large;
+        }
+
+        .custom {
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20vh;
+        }
+
+        .dotted {
+            border: 1px dotted white;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 20px
+        }
+
+        .button2 {
+            background-color: #008CBA;
+        }
+
+        .button3 {
+            background-color: #f44336;
+        }
+
+        .button4 {
+            background-color: #e7e7e7;
+            color: black;
+        }
+
+        .digit {
+            font-size: 150px;
+            color: #fff;
+        }
+
+        @media (max-width: 576px) {
+            .custom {
+                margin-top: 10vh;
+                /* Adjusted margin-top for smaller devices */
+            }
+
+            .digit {
+                font-size: 100px;
+                /* Reduced font size for digits */
+            }
+
+            .txt {
+                font-size: 20px;
+                /* Reduced font size for labels (Hr, Min, Sec, Count) */
+            }
+
+            .cen {
+                text-align: center;
+                margin-top: 20vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom">
+
+        <div class=" bg-dark text-light">
+            <h2 class="cen">STOPWATCH IN JAVASCRIPT</h2>
+        </div>
+
+        <div class="dotted">
+            <div id="time">
+                <span class="digit" id="hr">
+                    00</span>
+                <span class="txt">Hr</span>
+                <span class="digit" id="min">
+                    00</span>
+                <span class="txt">Min</span>
+                <span class="digit" id="sec">
+                    00</span>
+                <span class="txt">Sec</span>
+                <span class="digit" id="count">
+                    00</span>
+            </div>
+
+        </div>
+        <div class="flex align-items">
+            <button class="button" id="start">Start </button>
+            <button class="button button2" id="stop">Stop</button>
+            <button class="button button3" id="reset">Reset</button>
+        </div>
+    </div>
+
+</body>
+<script src="index.js">
+</script>
+
+</html>
